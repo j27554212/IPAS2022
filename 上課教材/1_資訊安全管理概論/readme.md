@@ -1,15 +1,155 @@
 
-## 資訊安全管理概念
-- 1_1_資訊安全管理概念
-  - 資訊安全管理系統
+## 資訊安全管理概論
+
+- 1.資訊安全管理概念
+  - 資訊安全目標_CIA   
+    - CIA: 機密性(Confidentiality) 完整性(Integrity) 可用性(Availability)
+    - 各種破壞CIA的情境
+    - 保護CIA的方法
+    - AAA ==> 驗證(Authentication) 授權(Authorization) 可歸責(Accountability)
+    - CIA AAA
+    - 其他資安基本觀念 
+      - 可靠度(Reliability)
+      - 不可否認性(Non-repudiation)
+      - 邊界與分類(Boundary and classification)
+      - 職務區隔(Segregation of duties, SOD) 
+      - 縱深防禦(Layered defense, defense in depth)
+      - 單一脆弱點(Single point of failure, SPOF)
+      - 阿奇里斯腱(Achilles heel)
+      - 木桶理論(Bucker principle）
+      - 僅知原則(Need to know)
+  - 資訊安全管理系統|ISMS|Information Security Management System
+    - 導入ISMS的目的
+    - 導入ISMS的過程與程序
+    - 導入ISMS的關鍵主題與事項
   - 相關法規概論與遵循
   - 隱私權保護與智慧財產權
-- 1_2_資產與風險管理
-  - 資產分類分級與盤點
-  - 風險評鑑與風險處理
-- 1_3_存取控制、加解密與金鑰管理
-  - 存取控制與身份認證
-  - 加解密與金鑰生命週期
-- 1_4_事故管理與營運持續
-  - 事件與事故管理
-  - 備援與營運持續
+  
+- 2.資產與風險管理
+  - 2-1.資產分類分級與盤點
+    - 資訊資產
+    - 資訊資產分類(類型)及分級(低中高)
+    - 資訊資產分級的目的
+    - 資訊資產分級的盤點施作方式
+  - 2-2.風險評鑑與風險處理
+    - 國際標準與架構
+      - NIST RMF(Risk Management Framework)
+      - ISO 27005(2018)
+      - ISO 31000 "Risk management – Principles and guidelines on implementation    
+    - 風險管理(risk management):定義
+    - 風險管理流程(Process)
+    - 全景建立
+      - 風險評估準則(Risk Evaluation Criteria)
+      - 衝擊準則(Impact Criteria)
+      - 風險接受準則(Risk Acceptance Criteria
+    - 風險評鑑(Risk assessment)
+      - 風險評鑑的方法 ==> 可區分為「高階風險評鑑」與「詳細風險評鑑」作法
+
+    - 風險處理(Risk treatment) ==> 殘餘風險|剩餘風險
+      - 四種風險處理{策略|模式}:
+        - 1.Risk reduction = 風險降低(風險修改)
+        - 2.Risk retention = 風險保留(風險接受)
+        - 3.Risk avoidance = 風險避免
+        - 4.Risk sharing = 風險分擔(風險轉移) 
+    - 風險接受(Risk acceptance)
+- 3.存取控制、加解密與金鑰管理
+  - 3-1.存取控制與身份認證
+    - 存取控制(Access_control)
+      - 定義
+      - 三大存取控制類型: 
+        - 1.實體類控制(Physical Controls) 
+        - 2.技術類控制(Technical Controls) 
+        - 3.管理類控制(Administrative Controls)
+      - [存取控制 seven功能](http://cisspstudy.blogspot.com/2007/05/types-of-access-control.html)
+        - 防禦性(Preventive)
+        - 偵測性(Detective)
+        - 矯正性(Corrective)
+        - 嚇阻性(Deterrent)
+        - 復原性(Recovery)
+        - 補償性(Compensation) 
+      - 存取控制管理
+      - Access control models存取控制模型
+        - 自主存取控制(Discretionary access control)(DAC)
+        - 強制存取控制(Mandatory access control) (MAC)
+        - 角色存取控制(Role-based access control)(RBAC)
+        - 規則存取控制(Rule-Based Access Control) (RAC)
+        - 屬性存取控制(Attribute-based access control)(ABAC)
+    - 身份認證(Authentication)
+      - 定義
+      - 三大因子(factors) 
+        - 所知之事，你知| Something you `know`| the knowledge factors
+        - 所持之物，你有(Something you `have`)| the ownership factors:
+        - 所具之形，你是 |Something you `are` | the inherence factors
+      - Single-factor authentication[單因子驗證] vs  Multi-factor authentication[多因子驗證]
+    - 各種驗證方法與鑑別技術
+      - 1_通行碼身分鑑別技術
+      - 2_一次性通行碼(One-time Password)| 動態通行碼 鑑別技術 
+      - 3_詰問與回應身分鑑別技術
+      - 4_生物特徵鑑別技術 
+  - 3-2.加解密與金鑰生命週期
+    - 密碼學（Cryptography）: 加密 解密  明文 密文
+      - 一般可分為古典密碼學和現代密碼學。
+      - 古典密碼學 == > 凱薩密碼
+      - 現代密碼
+        - 對稱加密（Symmetric Cryptography），以 DES，3DES，AES，RC4 為代表。
+          - 主要分為兩種方式：
+            - 區塊編碼器（Block Cipher），又稱為塊密碼 ==> DES，3DES，AES
+            - 序列密碼（Stream Cipher），又稱為流密碼 ==> RC4
+        - 非對稱加密（Asymmetric Cryptography），以 RSA，ElGamal，橢圓曲線加密為代表。
+        - 雜湊函數（Hash Function）==> 以 MD5，SHA-1，SHA-512 等為代表。
+        - 數位簽章（Digital Signature）==> 以 RSA 簽名，ElGamal 簽名，DSA 簽名為代表。 
+      - Public Key Infrastructure公開金鑰基礎建設 (PKI)
+       
+- 4.事故管理與營運持續
+  - 4-1.事件與事故管理
+    - 資安事故(Security Incident)與資安事件（Security Event）
+      - 資安事故(Security Incident) ==> 尚未對組織或單位造成損失
+      - 資安事件（Security Event） ==>對此資安事件已對組織或單位的資產造成損失
+    - 資訊安全事件通報
+      - 行政院國家資通安全會報通報及應變作業流程 
+    - 資安事故應變與處理程序(循環)
+  - 4-2.備援與營運持續
+    - 備援
+    - 重要觀念
+    - 目標回復時間 (Recovery Time Objective, RTO):關鍵業務從事故發生到完成回復最低運作水準之可接受時間。
+    - 資料回復點目標 (Recovery Point Objectives, RPO): 資料中心能容忍的最大資料遺失量
+    - 最大可容忍的中斷時間（Maximum Tolerable Period of Disruption， MTPD）:關鍵業務發生中斷後，恢復至最低運作水準，所能容許的中斷時間。
+    
+    - 備份方式1
+    - 完整備份（Full Backup）
+    - 差異備份（Differential Backup）
+    - 增量備份（Incremental Backup）
+    - 選擇式備份（Selective Backup）:對系統的一部分進行備份。
+  
+    - 備份方式2
+    - hot備份
+    - WARM備份
+    - COLD備份
+  
+    - 備份方式3
+    - LOCAL 備份
+    - REMOTE 備份(remote backup)
+
+    - 備份管理
+    
+  - 營運持續
+    - 營運持續(Business continuity)
+    - BCP(Business continuity `planning`) 業務連續性`計畫(規劃)`
+    - BCM(Business Continuity `Management`)業務連續性`管理`
+    -  (Business continuity planning)
+    - 營運持續管理的國際標準 ISO 22301
+    - 營運持續步驟:
+      - 1_建立業務持續運作`策略`
+      - 2_營運衝擊分析(Business Impact Analysis):BIA
+        - BIA的步驟:
+          - 識別組織的關鍵業務功能
+          - 計算關鍵業務
+          - 最大可承受中斷時間 (Max. Tolerable Period of Disruption, MTPD)
+          - 目標回覆時間(Recovery Time Objective, RTO)
+          - 各營運活動可容忍資料遺失之期間(Recovery Point Objective, RPO)
+          - 最低服務水準 (Min service level) 
+      - 3_識別`防禦性`控制措施
+      - 4_發展復原策略
+      - 5_發展營運持續計畫
+      - 6_測試與演練
+      - 7_維護營運持續計畫
