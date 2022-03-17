@@ -1,0 +1,143 @@
+
+## 資訊安全技術概論
+- 1.網路與通訊安全
+  - 1-1.網路安全
+    - 網路基本知識 ==> OSI vs TCP/IP vs IEEE 802
+    - 網路攻擊模式分析
+      - 網路協定的攻擊模式分析
+        - DNS 的攻擊模式分析
+        - NTP 的攻擊模式分析
+      - 著名的網路攻擊模式分析
+        - DDOS
+        - 社交工程 
+    - 安全的網路技術與協定
+      - 應用層
+        - https ==> SSL/TLS
+        - sftp ftps
+        - telnet ==> ssh
+        - DNSsec
+        - email 安全
+      - 網路層
+        - IPsec
+      - 安全連線
+        - ssh
+        - VPN     
+    - 網路安全技術
+      - 網路安全設備
+        - 防火牆
+        - 
+
+  - 1-2.通訊安全
+    - 無線區域網路(WLAN)
+    - 無線區域網路安全
+      - Fake AP
+      - 攻擊WEP
+      - 攻擊WPA
+      - 攻擊WPA2
+      - 攻擊WPA3 
+
+- 2.作業系統與應用程式安全
+  - 2-1.作業系統安全
+    - windows 作業系統
+      - [Windows Authentication](https://docs.microsoft.com/en-us/windows-server/security/windows-authentication/windows-authentication-overview)
+      - [Security and Protection(舊版)](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/hh831778(v=ws.11)) 
+    - windows 作業系統常用指令 [Windows commands](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands)
+    - windows 作業系統管理與安全工具
+      - task manager
+      - event viewer
+      - systeminternals 
+    - windows server技術:[官方網站](https://docs.microsoft.com/en-us/windows-server/)
+      - Active Directory(AD) ==> LDAP
+      - Group Policy(GP)
+    - [Windows security眾多文件] (https://docs.microsoft.com/en-us/windows/security/)
+      - [Security and Protection(舊版)](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/hh831778(v=ws.11)) 
+    - windows 攻擊手法: 
+      - Windows binary exploitation 
+      - Windows Kernel exploitation
+    - LINUX 作業系統
+    - LINUX 作業系統常用指令
+    - LINUX 作業系統管理與安全工具
+    - LINUX 攻擊手法: 
+      - Linux binary exploitation 
+      - Linux Kernel exploitation
+      
+  - 2-2.作業系統與應用程式 (含資料庫與網頁)攻擊手法
+    - 網站安全
+    - OWASP TOP 10
+    - OWASP API TOP 10
+    - 網站安全測試 
+    - 資料庫
+      - SQL資料庫
+      - NOSQL資料庫  
+    - 資料庫的攻擊事件
+    - 資料庫的攻擊手法
+    - 資料庫的安全防護
+  - 2-3.程式與開發安全
+    - 應用程式的安全威脅
+      - 逆向工程
+    - 安全程式開發(secure code standard)
+    - 程式的安全防護
+      - 代碼渾淆
+      - 加核與加密 
+    - 開發安全與SSDLC
+
+- [Mitre Att&CK](https://attack.mitre.org/)
+- [Common Attack Pattern Enumeration and Classification (CAPEC™)](https://capec.mitre.org/about/index.html)
+
+- 3.資安維運技術
+  - 3-1.惡意程式防護與弱點管理
+    -  各種惡意程式(malware)
+       - 勒索軟體
+       - 網站木馬
+       - 蠕蟲(worm) 
+    - 惡意程式分析(malware analysis)
+       - 靜態分析
+       - 動態分析
+    -  惡意程式防護
+    -  弱點與弱點資料庫
+    -  弱點嚴重性 CVSS
+    -  弱點管理
+       - 弱點掃描(Vulnerability Assessment)
+       - 網站弱點掃描
+       - 系統弱點掃描
+  - 3-2.資料安全及備份管理
+    - 資料安全(data security)
+      - 資料外洩
+    - 備份管理
+      - 資料備份方式:
+        - 完全備份(Full Backup) 
+        - 差異備份(Differential Backup)  
+        - 增量備份(Incremental Backup)
+      - 儲存媒體
+      - RAID 
+      - 備份管理作業
+  - 3-3.日誌管理
+    - 日誌管理基本觀念
+    - 日誌類型==> (A)系統日誌檔 (B) 應用程式日誌檔 (C) 安全性日誌檔
+    - Windows 作業系統日誌檔
+    - 日誌分析
+    - 日誌管理
+
+  - 資安防護技術
+    - [Mitre D3FEND™ - A knowledge graph of cybersecurity countermeasures](https://d3fend.mitre.org/) 
+    - 防火牆(Firewall)
+      - 防火牆類型
+        - 封包過濾防火牆(Packet-Filtering Firewall)
+        - 狀態檢視防火牆(Stateful Inspection Firewall)
+        - 代理伺服器(Proxy Server)
+    - 網站應用程式防火牆(Web Application Firewall, WAF)
+    - 蜜罐（Honeypot）
+    - 滲透測試(Penetration Testing)  vs 紅隊演練 (Red Team Assessment) 
+
+
+  
+- 4.新興科技安全
+  - 4-1.雲端安全概論
+    - 雲端運算定義
+    - 雲端安全
+  - 4-2.行動裝置安全概論
+    - OWASP MOBILE TOP 10 
+  - 4-3.物聯網安全概論
+    - 物聯網(IOT)
+    - OWASP IOT TOP 10  
+
