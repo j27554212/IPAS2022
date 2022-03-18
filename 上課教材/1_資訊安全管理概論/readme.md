@@ -12,7 +12,7 @@
       - 可靠度(Reliability)
       - 不可否認性(Non-repudiation)
       - 邊界與分類(Boundary and classification)
-      - 職務區隔(Segregation of duties, SOD) 
+      - [職務區隔(Segregation of duties, SOD)](https://en.wikipedia.org/wiki/Separation_of_duties#:~:text=Separation%20of%20duties%20(SoD%3B%20also,information%2C%20and%20other%20security%20compromises.) 
       - 縱深防禦(Layered defense, defense in depth)
       - 單一脆弱點(Single point of failure, SPOF)
       - 阿奇里斯腱(Achilles heel)
