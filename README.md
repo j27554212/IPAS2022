@@ -1,6 +1,6 @@
 # IPAS2022
 
-https://meet.google.com/rsi-rgud-uag
+https://meet.google.com/dgy-crxh-cyh
 
 ## [iPAS經濟部產業人才能力鑑定推動網](https://www.ipas.org.tw/)
 
