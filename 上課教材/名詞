@@ -1,0 +1,14 @@
+邊界與分類(Boundary and classification)
+
+職務區隔(Segregation of duties, SOD)
+=>是指需要多人完成一項任務的概念。  
+縱深防禦(Layered defense, defense in depth)
+=>有時也稱作彈性防禦或是深層防禦，是以全面深入的防禦去延遲而不是阻止前進中的敵人，透過放棄空間來換取時間與給予敵人額外的傷亡。  
+單一脆弱點(Single point of failure, SPOF)
+=>系統中一旦失效，就會讓整個系統無法運作的部件，換句話說，單點故障即會整體故障。   
+阿奇里斯腱(Achilles heel)
+=>易攻難守  
+木桶理論(Bucker principle）
+=>指用一個木桶來裝水，如果組成木桶的木板參差不齊，那麼它能盛下的水的容量是由這個木桶中最短的木板決定的，所以它又被稱為“短板效應”。  
+僅知原則(Need to know)
+=>保密資料只讓需要知道的人知道。      
